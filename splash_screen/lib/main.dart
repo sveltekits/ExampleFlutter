@@ -20,13 +20,13 @@ class SplashScreen extends StatelessWidget {
       ),
       home: Scaffold(
         body: Container(
-          decoration: const BoxDecoration(
-            /**
+          /**
              * Container는 decoration이라는 네임드 파라미터를 제공한다.
              * decoration이라는 매개변수는 BoxDecoration 클래스를 사용하게 되는데
              * BoxDecoration의 매개변수를 통해서 배경색, 테두리 색상, 테두리 두께 등
              * 컨테이너의 여러가지 UI 요소를 적용할 수 있다.
              */
+          decoration: const BoxDecoration(
             color: Colors.orange,
           ),
           child: const Center(
