@@ -27,14 +27,20 @@ class SplashScreen extends StatelessWidget {
              * 컨테이너의 여러가지 UI 요소를 적용할 수 있다.
              */
           decoration: const BoxDecoration(
-            color: Colors.orange,
+            color: Colors.white,
           ),
-          child: const Center(
-            /**
-             * Center : 중앙정렬 위젯
+          child: Center(
+              /**
+             * Image 위젯의 5가지 생성자
+             * 
+             * 1. Image 생성자 :: ImageProvider라는 또 다른 위젯에서 이미지를 그린다.
+             * 2. Image.asset 생성자 :: 앱에 저장된 asset 파일로 이미지를 그린다.
+             *    (pubspec.yaml 파일에 assets 폴더를 지정해야 한다.)
+             * 3. Image.network 생성자 :: URL를 통해서 이미지를 그린다.
+             * 4. Image.file 생성자 :: 파일을 통해서 이미지를 그린다.
+             * 5. Image.memory 생성자 :: 메모리에서 직접 이미지를 그린다.
              */
-            child: Text('Splash Screen'),
-          ),
+              child: Image.asset('assets/icon_catdog.png')),
         ),
       ),
     );
